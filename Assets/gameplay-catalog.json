@@ -1,0 +1,2055 @@
+{
+  "schema": 1,
+  "vehicles": [
+    {
+      "id": "hatch",
+      "name": "Aster H4",
+      "architecture": "Front-drive 2.0 L inline-four",
+      "mass_kg": 1320,
+      "power_kw": 125,
+      "torque_nm": 260,
+      "parts": [
+        {
+          "id": "battery",
+          "label": "12 V starter battery",
+          "kind": 0,
+          "fasteners": 3,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "hatch:battery:standard"
+        },
+        {
+          "id": "starter",
+          "label": "Starter motor",
+          "kind": 1,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "hatch:starter:standard"
+        },
+        {
+          "id": "alternator",
+          "label": "Alternator",
+          "kind": 2,
+          "fasteners": 3,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "belt"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:alternator:standard"
+        },
+        {
+          "id": "belt",
+          "label": "Accessory drive belt",
+          "kind": 3,
+          "fasteners": 0,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [
+            "alternator",
+            "tensioner"
+          ],
+          "standard_sku": "hatch:belt:standard"
+        },
+        {
+          "id": "tensioner",
+          "label": "Belt tensioner",
+          "kind": 4,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "belt"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:tensioner:standard"
+        },
+        {
+          "id": "air_filter",
+          "label": "Engine air filter",
+          "kind": 5,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "hatch:air_filter:standard"
+        },
+        {
+          "id": "oil_filter",
+          "label": "Oil filter assembly",
+          "kind": 6,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "hatch:oil_filter:standard"
+        },
+        {
+          "id": "plugs_a",
+          "label": "Spark plug assembly",
+          "kind": 7,
+          "fasteners": 6,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "hatch:plugs:standard"
+        },
+        {
+          "id": "radiator",
+          "label": "Coolant radiator",
+          "kind": 8,
+          "fasteners": 4,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "hose_upper",
+            "hose_lower"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:radiator:standard"
+        },
+        {
+          "id": "hose_upper",
+          "label": "Upper coolant hose",
+          "kind": 9,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [
+            "radiator"
+          ],
+          "standard_sku": "hatch:hose:standard"
+        },
+        {
+          "id": "hose_lower",
+          "label": "Lower coolant hose",
+          "kind": 9,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "radiator"
+          ],
+          "standard_sku": "hatch:hose:standard"
+        },
+        {
+          "id": "fuse",
+          "label": "Main fuse assembly",
+          "kind": 10,
+          "fasteners": 0,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "hatch:fuse:standard"
+        },
+        {
+          "id": "wheel_fl",
+          "label": "Front left wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_fl",
+            "disc_fl",
+            "pads_fl",
+            "shock_fl"
+          ],
+          "standard_sku": "hatch:wheel:standard"
+        },
+        {
+          "id": "tire_fl",
+          "label": "Front left tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:tire:standard"
+        },
+        {
+          "id": "disc_fl",
+          "label": "Front left brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl",
+            "pads_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:disc:standard"
+        },
+        {
+          "id": "pads_fl",
+          "label": "Front left brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [
+            "disc_fl"
+          ],
+          "standard_sku": "hatch:pads:standard"
+        },
+        {
+          "id": "shock_fl",
+          "label": "Front left shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:shock:standard"
+        },
+        {
+          "id": "wheel_fr",
+          "label": "Front right wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_fr",
+            "disc_fr",
+            "pads_fr",
+            "shock_fr"
+          ],
+          "standard_sku": "hatch:wheel:standard"
+        },
+        {
+          "id": "tire_fr",
+          "label": "Front right tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:tire:standard"
+        },
+        {
+          "id": "disc_fr",
+          "label": "Front right brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr",
+            "pads_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:disc:standard"
+        },
+        {
+          "id": "pads_fr",
+          "label": "Front right brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [
+            "disc_fr"
+          ],
+          "standard_sku": "hatch:pads:standard"
+        },
+        {
+          "id": "shock_fr",
+          "label": "Front right shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:shock:standard"
+        },
+        {
+          "id": "wheel_rl",
+          "label": "Rear left wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_rl",
+            "disc_rl",
+            "pads_rl",
+            "shock_rl"
+          ],
+          "standard_sku": "hatch:wheel:standard"
+        },
+        {
+          "id": "tire_rl",
+          "label": "Rear left tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:tire:standard"
+        },
+        {
+          "id": "disc_rl",
+          "label": "Rear left brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl",
+            "pads_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:disc:standard"
+        },
+        {
+          "id": "pads_rl",
+          "label": "Rear left brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [
+            "disc_rl"
+          ],
+          "standard_sku": "hatch:pads:standard"
+        },
+        {
+          "id": "shock_rl",
+          "label": "Rear left shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:shock:standard"
+        },
+        {
+          "id": "wheel_rr",
+          "label": "Rear right wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_rr",
+            "disc_rr",
+            "pads_rr",
+            "shock_rr"
+          ],
+          "standard_sku": "hatch:wheel:standard"
+        },
+        {
+          "id": "tire_rr",
+          "label": "Rear right tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:tire:standard"
+        },
+        {
+          "id": "disc_rr",
+          "label": "Rear right brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr",
+            "pads_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:disc:standard"
+        },
+        {
+          "id": "pads_rr",
+          "label": "Rear right brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [
+            "disc_rr"
+          ],
+          "standard_sku": "hatch:pads:standard"
+        },
+        {
+          "id": "shock_rr",
+          "label": "Rear right shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "hatch:shock:standard"
+        }
+      ]
+    },
+    {
+      "id": "coupe",
+      "name": "Vektor C8",
+      "architecture": "Rear-drive 4.8 L V8",
+      "mass_kg": 1680,
+      "power_kw": 330,
+      "torque_nm": 560,
+      "parts": [
+        {
+          "id": "battery",
+          "label": "12 V starter battery",
+          "kind": 0,
+          "fasteners": 3,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:battery:standard"
+        },
+        {
+          "id": "starter",
+          "label": "Starter motor",
+          "kind": 1,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:starter:standard"
+        },
+        {
+          "id": "alternator",
+          "label": "Alternator",
+          "kind": 2,
+          "fasteners": 3,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "belt"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:alternator:standard"
+        },
+        {
+          "id": "belt",
+          "label": "Accessory drive belt",
+          "kind": 3,
+          "fasteners": 0,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [
+            "alternator",
+            "tensioner"
+          ],
+          "standard_sku": "coupe:belt:standard"
+        },
+        {
+          "id": "tensioner",
+          "label": "Belt tensioner",
+          "kind": 4,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "belt"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:tensioner:standard"
+        },
+        {
+          "id": "air_filter",
+          "label": "Engine air filter",
+          "kind": 5,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:air_filter:standard"
+        },
+        {
+          "id": "oil_filter",
+          "label": "Oil filter assembly",
+          "kind": 6,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:oil_filter:standard"
+        },
+        {
+          "id": "plugs_a",
+          "label": "Spark plugs: bank A",
+          "kind": 7,
+          "fasteners": 4,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:plugs:standard"
+        },
+        {
+          "id": "plugs_b",
+          "label": "Spark plugs: bank B",
+          "kind": 7,
+          "fasteners": 4,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:plugs:standard"
+        },
+        {
+          "id": "radiator",
+          "label": "Coolant radiator",
+          "kind": 8,
+          "fasteners": 4,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "hose_upper",
+            "hose_lower"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:radiator:standard"
+        },
+        {
+          "id": "hose_upper",
+          "label": "Upper coolant hose",
+          "kind": 9,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [
+            "radiator"
+          ],
+          "standard_sku": "coupe:hose:standard"
+        },
+        {
+          "id": "hose_lower",
+          "label": "Lower coolant hose",
+          "kind": 9,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "radiator"
+          ],
+          "standard_sku": "coupe:hose:standard"
+        },
+        {
+          "id": "fuse",
+          "label": "Main fuse assembly",
+          "kind": 10,
+          "fasteners": 0,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "coupe:fuse:standard"
+        },
+        {
+          "id": "wheel_fl",
+          "label": "Front left wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_fl",
+            "disc_fl",
+            "pads_fl",
+            "shock_fl"
+          ],
+          "standard_sku": "coupe:wheel:standard"
+        },
+        {
+          "id": "tire_fl",
+          "label": "Front left tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:tire:standard"
+        },
+        {
+          "id": "disc_fl",
+          "label": "Front left brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl",
+            "pads_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:disc:standard"
+        },
+        {
+          "id": "pads_fl",
+          "label": "Front left brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [
+            "disc_fl"
+          ],
+          "standard_sku": "coupe:pads:standard"
+        },
+        {
+          "id": "shock_fl",
+          "label": "Front left shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:shock:standard"
+        },
+        {
+          "id": "wheel_fr",
+          "label": "Front right wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_fr",
+            "disc_fr",
+            "pads_fr",
+            "shock_fr"
+          ],
+          "standard_sku": "coupe:wheel:standard"
+        },
+        {
+          "id": "tire_fr",
+          "label": "Front right tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:tire:standard"
+        },
+        {
+          "id": "disc_fr",
+          "label": "Front right brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr",
+            "pads_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:disc:standard"
+        },
+        {
+          "id": "pads_fr",
+          "label": "Front right brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [
+            "disc_fr"
+          ],
+          "standard_sku": "coupe:pads:standard"
+        },
+        {
+          "id": "shock_fr",
+          "label": "Front right shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:shock:standard"
+        },
+        {
+          "id": "wheel_rl",
+          "label": "Rear left wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_rl",
+            "disc_rl",
+            "pads_rl",
+            "shock_rl"
+          ],
+          "standard_sku": "coupe:wheel:standard"
+        },
+        {
+          "id": "tire_rl",
+          "label": "Rear left tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:tire:standard"
+        },
+        {
+          "id": "disc_rl",
+          "label": "Rear left brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl",
+            "pads_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:disc:standard"
+        },
+        {
+          "id": "pads_rl",
+          "label": "Rear left brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [
+            "disc_rl"
+          ],
+          "standard_sku": "coupe:pads:standard"
+        },
+        {
+          "id": "shock_rl",
+          "label": "Rear left shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:shock:standard"
+        },
+        {
+          "id": "wheel_rr",
+          "label": "Rear right wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_rr",
+            "disc_rr",
+            "pads_rr",
+            "shock_rr"
+          ],
+          "standard_sku": "coupe:wheel:standard"
+        },
+        {
+          "id": "tire_rr",
+          "label": "Rear right tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:tire:standard"
+        },
+        {
+          "id": "disc_rr",
+          "label": "Rear right brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr",
+            "pads_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:disc:standard"
+        },
+        {
+          "id": "pads_rr",
+          "label": "Rear right brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [
+            "disc_rr"
+          ],
+          "standard_sku": "coupe:pads:standard"
+        },
+        {
+          "id": "shock_rr",
+          "label": "Rear right shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "coupe:shock:standard"
+        }
+      ]
+    },
+    {
+      "id": "suv",
+      "name": "Terra S6",
+      "architecture": "All-wheel-drive 3.0 L inline-six",
+      "mass_kg": 2180,
+      "power_kw": 210,
+      "torque_nm": 440,
+      "parts": [
+        {
+          "id": "battery",
+          "label": "12 V starter battery",
+          "kind": 0,
+          "fasteners": 3,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "suv:battery:standard"
+        },
+        {
+          "id": "starter",
+          "label": "Starter motor",
+          "kind": 1,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "suv:starter:standard"
+        },
+        {
+          "id": "alternator",
+          "label": "Alternator",
+          "kind": 2,
+          "fasteners": 3,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "belt"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:alternator:standard"
+        },
+        {
+          "id": "belt",
+          "label": "Accessory drive belt",
+          "kind": 3,
+          "fasteners": 0,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [
+            "alternator",
+            "tensioner"
+          ],
+          "standard_sku": "suv:belt:standard"
+        },
+        {
+          "id": "tensioner",
+          "label": "Belt tensioner",
+          "kind": 4,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "belt"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:tensioner:standard"
+        },
+        {
+          "id": "air_filter",
+          "label": "Engine air filter",
+          "kind": 5,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "suv:air_filter:standard"
+        },
+        {
+          "id": "oil_filter",
+          "label": "Oil filter assembly",
+          "kind": 6,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "suv:oil_filter:standard"
+        },
+        {
+          "id": "plugs_a",
+          "label": "Spark plug assembly",
+          "kind": 7,
+          "fasteners": 6,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "suv:plugs:standard"
+        },
+        {
+          "id": "radiator",
+          "label": "Coolant radiator",
+          "kind": 8,
+          "fasteners": 4,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [
+            "hose_upper",
+            "hose_lower"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:radiator:standard"
+        },
+        {
+          "id": "hose_upper",
+          "label": "Upper coolant hose",
+          "kind": 9,
+          "fasteners": 2,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [
+            "radiator"
+          ],
+          "standard_sku": "suv:hose:standard"
+        },
+        {
+          "id": "hose_lower",
+          "label": "Lower coolant hose",
+          "kind": 9,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "radiator"
+          ],
+          "standard_sku": "suv:hose:standard"
+        },
+        {
+          "id": "fuse",
+          "label": "Main fuse assembly",
+          "kind": 10,
+          "fasteners": 0,
+          "requires_hood": true,
+          "requires_lift": false,
+          "remove_first": [],
+          "install_first": [],
+          "standard_sku": "suv:fuse:standard"
+        },
+        {
+          "id": "wheel_fl",
+          "label": "Front left wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_fl",
+            "disc_fl",
+            "pads_fl",
+            "shock_fl"
+          ],
+          "standard_sku": "suv:wheel:standard"
+        },
+        {
+          "id": "tire_fl",
+          "label": "Front left tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:tire:standard"
+        },
+        {
+          "id": "disc_fl",
+          "label": "Front left brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl",
+            "pads_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:disc:standard"
+        },
+        {
+          "id": "pads_fl",
+          "label": "Front left brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [
+            "disc_fl"
+          ],
+          "standard_sku": "suv:pads:standard"
+        },
+        {
+          "id": "shock_fl",
+          "label": "Front left shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fl"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:shock:standard"
+        },
+        {
+          "id": "wheel_fr",
+          "label": "Front right wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_fr",
+            "disc_fr",
+            "pads_fr",
+            "shock_fr"
+          ],
+          "standard_sku": "suv:wheel:standard"
+        },
+        {
+          "id": "tire_fr",
+          "label": "Front right tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:tire:standard"
+        },
+        {
+          "id": "disc_fr",
+          "label": "Front right brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr",
+            "pads_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:disc:standard"
+        },
+        {
+          "id": "pads_fr",
+          "label": "Front right brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [
+            "disc_fr"
+          ],
+          "standard_sku": "suv:pads:standard"
+        },
+        {
+          "id": "shock_fr",
+          "label": "Front right shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_fr"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:shock:standard"
+        },
+        {
+          "id": "wheel_rl",
+          "label": "Rear left wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_rl",
+            "disc_rl",
+            "pads_rl",
+            "shock_rl"
+          ],
+          "standard_sku": "suv:wheel:standard"
+        },
+        {
+          "id": "tire_rl",
+          "label": "Rear left tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:tire:standard"
+        },
+        {
+          "id": "disc_rl",
+          "label": "Rear left brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl",
+            "pads_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:disc:standard"
+        },
+        {
+          "id": "pads_rl",
+          "label": "Rear left brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [
+            "disc_rl"
+          ],
+          "standard_sku": "suv:pads:standard"
+        },
+        {
+          "id": "shock_rl",
+          "label": "Rear left shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rl"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:shock:standard"
+        },
+        {
+          "id": "wheel_rr",
+          "label": "Rear right wheel",
+          "kind": 11,
+          "fasteners": 5,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [],
+          "install_first": [
+            "tire_rr",
+            "disc_rr",
+            "pads_rr",
+            "shock_rr"
+          ],
+          "standard_sku": "suv:wheel:standard"
+        },
+        {
+          "id": "tire_rr",
+          "label": "Rear right tire",
+          "kind": 12,
+          "fasteners": 0,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:tire:standard"
+        },
+        {
+          "id": "disc_rr",
+          "label": "Rear right brake disc",
+          "kind": 13,
+          "fasteners": 1,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr",
+            "pads_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:disc:standard"
+        },
+        {
+          "id": "pads_rr",
+          "label": "Rear right brake pad set",
+          "kind": 14,
+          "fasteners": 2,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [
+            "disc_rr"
+          ],
+          "standard_sku": "suv:pads:standard"
+        },
+        {
+          "id": "shock_rr",
+          "label": "Rear right shock absorber",
+          "kind": 15,
+          "fasteners": 3,
+          "requires_hood": false,
+          "requires_lift": true,
+          "remove_first": [
+            "wheel_rr"
+          ],
+          "install_first": [],
+          "standard_sku": "suv:shock:standard"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "01-battery",
+      "title": "A slow morning",
+      "symptoms": "Starter turns slowly; the battery test is weak.",
+      "vehicle": "hatch",
+      "payment_cents": 26000,
+      "reputation": 10,
+      "verification_protocol": 0,
+      "faults": [
+        {
+          "part": "battery",
+          "health": 0.2
+        }
+      ]
+    },
+    {
+      "id": "02-charge",
+      "title": "Charge warning",
+      "symptoms": "Battery warning stays on; inspect charging output and drive belt.",
+      "vehicle": "suv",
+      "payment_cents": 46000,
+      "reputation": 12,
+      "verification_protocol": 1,
+      "faults": [
+        {
+          "part": "alternator",
+          "health": 0.25
+        },
+        {
+          "part": "belt",
+          "health": 0.3
+        }
+      ]
+    },
+    {
+      "id": "03-misfire",
+      "title": "Uneven idle",
+      "symptoms": "The coupe shakes at idle; both plug banks show ignition wear.",
+      "vehicle": "coupe",
+      "payment_cents": 35000,
+      "reputation": 12,
+      "verification_protocol": 2,
+      "faults": [
+        {
+          "part": "plugs_a",
+          "health": 0.2
+        },
+        {
+          "part": "plugs_b",
+          "health": 0.3
+        }
+      ]
+    },
+    {
+      "id": "04-intake",
+      "title": "Breathing room",
+      "symptoms": "Hatchback feels sluggish; intake restriction is high.",
+      "vehicle": "hatch",
+      "payment_cents": 21000,
+      "reputation": 10,
+      "verification_protocol": 3,
+      "faults": [
+        {
+          "part": "air_filter",
+          "health": 0.15
+        }
+      ]
+    },
+    {
+      "id": "05-cooling",
+      "title": "Running hot",
+      "symptoms": "SUV temperature rises under load; radiator and upper hose need inspection.",
+      "vehicle": "suv",
+      "payment_cents": 52000,
+      "reputation": 15,
+      "verification_protocol": 4,
+      "faults": [
+        {
+          "part": "radiator",
+          "health": 0.3
+        },
+        {
+          "part": "hose_upper",
+          "health": 0.25
+        }
+      ]
+    },
+    {
+      "id": "06-brakes",
+      "title": "Brake vibration",
+      "symptoms": "Coupe braking is noisy with pedal vibration; check the front-left assembly.",
+      "vehicle": "coupe",
+      "payment_cents": 42000,
+      "reputation": 15,
+      "verification_protocol": 5,
+      "faults": [
+        {
+          "part": "pads_fl",
+          "health": 0.2
+        },
+        {
+          "part": "disc_fl",
+          "health": 0.25
+        }
+      ]
+    },
+    {
+      "id": "07-tires",
+      "title": "Grip restored",
+      "symptoms": "The hatchback slides early; all four tires have insufficient tread.",
+      "vehicle": "hatch",
+      "payment_cents": 61000,
+      "reputation": 15,
+      "verification_protocol": 6,
+      "faults": [
+        {
+          "part": "tire_fl",
+          "health": 0.2
+        },
+        {
+          "part": "tire_fr",
+          "health": 0.2
+        },
+        {
+          "part": "tire_rl",
+          "health": 0.3
+        },
+        {
+          "part": "tire_rr",
+          "health": 0.3
+        }
+      ]
+    },
+    {
+      "id": "08-shock",
+      "title": "Settle down",
+      "symptoms": "SUV bounces after corners; front-right damper is damaged.",
+      "vehicle": "suv",
+      "payment_cents": 35000,
+      "reputation": 15,
+      "verification_protocol": 7,
+      "faults": [
+        {
+          "part": "shock_fr",
+          "health": 0.2
+        }
+      ]
+    }
+  ],
+  "shop": [
+    {
+      "id": "hatch:battery:standard",
+      "label": "Aster H4 battery",
+      "vehicle": "hatch",
+      "kind": 0,
+      "grade": 0,
+      "price_cents": 11000,
+      "stock": 8
+    },
+    {
+      "id": "hatch:starter:standard",
+      "label": "Aster H4 starter",
+      "vehicle": "hatch",
+      "kind": 1,
+      "grade": 0,
+      "price_cents": 13500,
+      "stock": 8
+    },
+    {
+      "id": "hatch:alternator:standard",
+      "label": "Aster H4 alternator",
+      "vehicle": "hatch",
+      "kind": 2,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "hatch:belt:standard",
+      "label": "Aster H4 belt",
+      "vehicle": "hatch",
+      "kind": 3,
+      "grade": 0,
+      "price_cents": 2400,
+      "stock": 8
+    },
+    {
+      "id": "hatch:tensioner:standard",
+      "label": "Aster H4 tensioner",
+      "vehicle": "hatch",
+      "kind": 4,
+      "grade": 0,
+      "price_cents": 4500,
+      "stock": 8
+    },
+    {
+      "id": "hatch:air_filter:standard",
+      "label": "Aster H4 air_filter",
+      "vehicle": "hatch",
+      "kind": 5,
+      "grade": 0,
+      "price_cents": 1900,
+      "stock": 8
+    },
+    {
+      "id": "hatch:air_filter:sport",
+      "label": "Aster H4 performance air_filter",
+      "vehicle": "hatch",
+      "kind": 5,
+      "grade": 1,
+      "price_cents": 2850,
+      "stock": 8
+    },
+    {
+      "id": "hatch:oil_filter:standard",
+      "label": "Aster H4 oil_filter",
+      "vehicle": "hatch",
+      "kind": 6,
+      "grade": 0,
+      "price_cents": 1400,
+      "stock": 8
+    },
+    {
+      "id": "hatch:plugs:standard",
+      "label": "Aster H4 plugs",
+      "vehicle": "hatch",
+      "kind": 7,
+      "grade": 0,
+      "price_cents": 5200,
+      "stock": 8
+    },
+    {
+      "id": "hatch:radiator:standard",
+      "label": "Aster H4 radiator",
+      "vehicle": "hatch",
+      "kind": 8,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "hatch:hose:standard",
+      "label": "Aster H4 hose",
+      "vehicle": "hatch",
+      "kind": 9,
+      "grade": 0,
+      "price_cents": 2200,
+      "stock": 8
+    },
+    {
+      "id": "hatch:fuse:standard",
+      "label": "Aster H4 fuse",
+      "vehicle": "hatch",
+      "kind": 10,
+      "grade": 0,
+      "price_cents": 900,
+      "stock": 8
+    },
+    {
+      "id": "hatch:wheel:standard",
+      "label": "Aster H4 wheel",
+      "vehicle": "hatch",
+      "kind": 11,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "hatch:tire:standard",
+      "label": "Aster H4 tire",
+      "vehicle": "hatch",
+      "kind": 12,
+      "grade": 0,
+      "price_cents": 8500,
+      "stock": 8
+    },
+    {
+      "id": "hatch:tire:sport",
+      "label": "Aster H4 performance tire",
+      "vehicle": "hatch",
+      "kind": 12,
+      "grade": 1,
+      "price_cents": 12750,
+      "stock": 8
+    },
+    {
+      "id": "hatch:disc:standard",
+      "label": "Aster H4 disc",
+      "vehicle": "hatch",
+      "kind": 13,
+      "grade": 0,
+      "price_cents": 7500,
+      "stock": 8
+    },
+    {
+      "id": "hatch:disc:sport",
+      "label": "Aster H4 performance disc",
+      "vehicle": "hatch",
+      "kind": 13,
+      "grade": 1,
+      "price_cents": 11250,
+      "stock": 8
+    },
+    {
+      "id": "hatch:pads:standard",
+      "label": "Aster H4 pads",
+      "vehicle": "hatch",
+      "kind": 14,
+      "grade": 0,
+      "price_cents": 4500,
+      "stock": 8
+    },
+    {
+      "id": "hatch:pads:sport",
+      "label": "Aster H4 performance pads",
+      "vehicle": "hatch",
+      "kind": 14,
+      "grade": 1,
+      "price_cents": 6750,
+      "stock": 8
+    },
+    {
+      "id": "hatch:shock:standard",
+      "label": "Aster H4 shock",
+      "vehicle": "hatch",
+      "kind": 15,
+      "grade": 0,
+      "price_cents": 9800,
+      "stock": 8
+    },
+    {
+      "id": "hatch:shock:sport",
+      "label": "Aster H4 performance shock",
+      "vehicle": "hatch",
+      "kind": 15,
+      "grade": 1,
+      "price_cents": 14700,
+      "stock": 8
+    },
+    {
+      "id": "coupe:battery:standard",
+      "label": "Vektor C8 battery",
+      "vehicle": "coupe",
+      "kind": 0,
+      "grade": 0,
+      "price_cents": 11000,
+      "stock": 8
+    },
+    {
+      "id": "coupe:starter:standard",
+      "label": "Vektor C8 starter",
+      "vehicle": "coupe",
+      "kind": 1,
+      "grade": 0,
+      "price_cents": 13500,
+      "stock": 8
+    },
+    {
+      "id": "coupe:alternator:standard",
+      "label": "Vektor C8 alternator",
+      "vehicle": "coupe",
+      "kind": 2,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "coupe:belt:standard",
+      "label": "Vektor C8 belt",
+      "vehicle": "coupe",
+      "kind": 3,
+      "grade": 0,
+      "price_cents": 2400,
+      "stock": 8
+    },
+    {
+      "id": "coupe:tensioner:standard",
+      "label": "Vektor C8 tensioner",
+      "vehicle": "coupe",
+      "kind": 4,
+      "grade": 0,
+      "price_cents": 4500,
+      "stock": 8
+    },
+    {
+      "id": "coupe:air_filter:standard",
+      "label": "Vektor C8 air_filter",
+      "vehicle": "coupe",
+      "kind": 5,
+      "grade": 0,
+      "price_cents": 1900,
+      "stock": 8
+    },
+    {
+      "id": "coupe:air_filter:sport",
+      "label": "Vektor C8 performance air_filter",
+      "vehicle": "coupe",
+      "kind": 5,
+      "grade": 1,
+      "price_cents": 2850,
+      "stock": 8
+    },
+    {
+      "id": "coupe:oil_filter:standard",
+      "label": "Vektor C8 oil_filter",
+      "vehicle": "coupe",
+      "kind": 6,
+      "grade": 0,
+      "price_cents": 1400,
+      "stock": 8
+    },
+    {
+      "id": "coupe:plugs:standard",
+      "label": "Vektor C8 plugs",
+      "vehicle": "coupe",
+      "kind": 7,
+      "grade": 0,
+      "price_cents": 5200,
+      "stock": 8
+    },
+    {
+      "id": "coupe:radiator:standard",
+      "label": "Vektor C8 radiator",
+      "vehicle": "coupe",
+      "kind": 8,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "coupe:hose:standard",
+      "label": "Vektor C8 hose",
+      "vehicle": "coupe",
+      "kind": 9,
+      "grade": 0,
+      "price_cents": 2200,
+      "stock": 8
+    },
+    {
+      "id": "coupe:fuse:standard",
+      "label": "Vektor C8 fuse",
+      "vehicle": "coupe",
+      "kind": 10,
+      "grade": 0,
+      "price_cents": 900,
+      "stock": 8
+    },
+    {
+      "id": "coupe:wheel:standard",
+      "label": "Vektor C8 wheel",
+      "vehicle": "coupe",
+      "kind": 11,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "coupe:tire:standard",
+      "label": "Vektor C8 tire",
+      "vehicle": "coupe",
+      "kind": 12,
+      "grade": 0,
+      "price_cents": 8500,
+      "stock": 8
+    },
+    {
+      "id": "coupe:tire:sport",
+      "label": "Vektor C8 performance tire",
+      "vehicle": "coupe",
+      "kind": 12,
+      "grade": 1,
+      "price_cents": 12750,
+      "stock": 8
+    },
+    {
+      "id": "coupe:disc:standard",
+      "label": "Vektor C8 disc",
+      "vehicle": "coupe",
+      "kind": 13,
+      "grade": 0,
+      "price_cents": 7500,
+      "stock": 8
+    },
+    {
+      "id": "coupe:disc:sport",
+      "label": "Vektor C8 performance disc",
+      "vehicle": "coupe",
+      "kind": 13,
+      "grade": 1,
+      "price_cents": 11250,
+      "stock": 8
+    },
+    {
+      "id": "coupe:pads:standard",
+      "label": "Vektor C8 pads",
+      "vehicle": "coupe",
+      "kind": 14,
+      "grade": 0,
+      "price_cents": 4500,
+      "stock": 8
+    },
+    {
+      "id": "coupe:pads:sport",
+      "label": "Vektor C8 performance pads",
+      "vehicle": "coupe",
+      "kind": 14,
+      "grade": 1,
+      "price_cents": 6750,
+      "stock": 8
+    },
+    {
+      "id": "coupe:shock:standard",
+      "label": "Vektor C8 shock",
+      "vehicle": "coupe",
+      "kind": 15,
+      "grade": 0,
+      "price_cents": 9800,
+      "stock": 8
+    },
+    {
+      "id": "coupe:shock:sport",
+      "label": "Vektor C8 performance shock",
+      "vehicle": "coupe",
+      "kind": 15,
+      "grade": 1,
+      "price_cents": 14700,
+      "stock": 8
+    },
+    {
+      "id": "suv:battery:standard",
+      "label": "Terra S6 battery",
+      "vehicle": "suv",
+      "kind": 0,
+      "grade": 0,
+      "price_cents": 11000,
+      "stock": 8
+    },
+    {
+      "id": "suv:starter:standard",
+      "label": "Terra S6 starter",
+      "vehicle": "suv",
+      "kind": 1,
+      "grade": 0,
+      "price_cents": 13500,
+      "stock": 8
+    },
+    {
+      "id": "suv:alternator:standard",
+      "label": "Terra S6 alternator",
+      "vehicle": "suv",
+      "kind": 2,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "suv:belt:standard",
+      "label": "Terra S6 belt",
+      "vehicle": "suv",
+      "kind": 3,
+      "grade": 0,
+      "price_cents": 2400,
+      "stock": 8
+    },
+    {
+      "id": "suv:tensioner:standard",
+      "label": "Terra S6 tensioner",
+      "vehicle": "suv",
+      "kind": 4,
+      "grade": 0,
+      "price_cents": 4500,
+      "stock": 8
+    },
+    {
+      "id": "suv:air_filter:standard",
+      "label": "Terra S6 air_filter",
+      "vehicle": "suv",
+      "kind": 5,
+      "grade": 0,
+      "price_cents": 1900,
+      "stock": 8
+    },
+    {
+      "id": "suv:air_filter:sport",
+      "label": "Terra S6 performance air_filter",
+      "vehicle": "suv",
+      "kind": 5,
+      "grade": 1,
+      "price_cents": 2850,
+      "stock": 8
+    },
+    {
+      "id": "suv:oil_filter:standard",
+      "label": "Terra S6 oil_filter",
+      "vehicle": "suv",
+      "kind": 6,
+      "grade": 0,
+      "price_cents": 1400,
+      "stock": 8
+    },
+    {
+      "id": "suv:plugs:standard",
+      "label": "Terra S6 plugs",
+      "vehicle": "suv",
+      "kind": 7,
+      "grade": 0,
+      "price_cents": 5200,
+      "stock": 8
+    },
+    {
+      "id": "suv:radiator:standard",
+      "label": "Terra S6 radiator",
+      "vehicle": "suv",
+      "kind": 8,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "suv:hose:standard",
+      "label": "Terra S6 hose",
+      "vehicle": "suv",
+      "kind": 9,
+      "grade": 0,
+      "price_cents": 2200,
+      "stock": 8
+    },
+    {
+      "id": "suv:fuse:standard",
+      "label": "Terra S6 fuse",
+      "vehicle": "suv",
+      "kind": 10,
+      "grade": 0,
+      "price_cents": 900,
+      "stock": 8
+    },
+    {
+      "id": "suv:wheel:standard",
+      "label": "Terra S6 wheel",
+      "vehicle": "suv",
+      "kind": 11,
+      "grade": 0,
+      "price_cents": 18000,
+      "stock": 8
+    },
+    {
+      "id": "suv:tire:standard",
+      "label": "Terra S6 tire",
+      "vehicle": "suv",
+      "kind": 12,
+      "grade": 0,
+      "price_cents": 8500,
+      "stock": 8
+    },
+    {
+      "id": "suv:tire:sport",
+      "label": "Terra S6 performance tire",
+      "vehicle": "suv",
+      "kind": 12,
+      "grade": 1,
+      "price_cents": 12750,
+      "stock": 8
+    },
+    {
+      "id": "suv:disc:standard",
+      "label": "Terra S6 disc",
+      "vehicle": "suv",
+      "kind": 13,
+      "grade": 0,
+      "price_cents": 7500,
+      "stock": 8
+    },
+    {
+      "id": "suv:disc:sport",
+      "label": "Terra S6 performance disc",
+      "vehicle": "suv",
+      "kind": 13,
+      "grade": 1,
+      "price_cents": 11250,
+      "stock": 8
+    },
+    {
+      "id": "suv:pads:standard",
+      "label": "Terra S6 pads",
+      "vehicle": "suv",
+      "kind": 14,
+      "grade": 0,
+      "price_cents": 4500,
+      "stock": 8
+    },
+    {
+      "id": "suv:pads:sport",
+      "label": "Terra S6 performance pads",
+      "vehicle": "suv",
+      "kind": 14,
+      "grade": 1,
+      "price_cents": 6750,
+      "stock": 8
+    },
+    {
+      "id": "suv:shock:standard",
+      "label": "Terra S6 shock",
+      "vehicle": "suv",
+      "kind": 15,
+      "grade": 0,
+      "price_cents": 9800,
+      "stock": 8
+    },
+    {
+      "id": "suv:shock:sport",
+      "label": "Terra S6 performance shock",
+      "vehicle": "suv",
+      "kind": 15,
+      "grade": 1,
+      "price_cents": 14700,
+      "stock": 8
+    }
+  ]
+}

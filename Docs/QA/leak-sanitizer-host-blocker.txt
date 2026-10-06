@@ -1,0 +1,7 @@
+Initial default -fsanitize=address,undefined execution failed in host LeakSanitizer initialization:
+Can't open /proc/12/task for reading.
+LeakSanitizer has encountered a fatal error.
+LeakSanitizer does not work under ptrace (strace, gdb, etc).
+
+Re-run used ASAN_OPTIONS=detect_leaks=0. ASan and UBSan remained active.
+Do not describe this as a passed memory-leak test.

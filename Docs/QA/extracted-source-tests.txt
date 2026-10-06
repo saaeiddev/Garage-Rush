@@ -1,0 +1,44 @@
+Compiling C++ core checks: g++
+PASS Catalogs: three fictional vehicles, service parts, unique IDs and valid dependency graph
+PASS Fresh career has valid, distinct serials and assembled cars
+PASS Unknown and overlapping orders are atomic failures
+PASS Battery fault changes actual state-derived start diagnostics
+PASS Access, tools and fasteners reject invalid removals
+PASS Fastener operations are bounded and parts cannot duplicate
+PASS Brake access requires wheel and pad removal before disc
+PASS Missing suspension/wheels block lowering and track movement
+PASS Purchase checks funds, stock and unknown SKUs without charges
+PASS Refund returns one unused purchase exactly once
+PASS Installed/removed purchased parts lose refund eligibility
+PASS Wrong vehicle and wrong component fitting preserve inventory
+PASS Mid-fastener repair roundtrip preserves every byte of state
+PASS Removed part, serial, evidence and order survive serialization
+PASS Corrupted saves fail without replacing the current session
+PASS Unknown schema and semantic tampering are rejected
+PASS State validator catches duplicate serials, NaNs and broken prerequisites
+PASS All truncated save lengths reject atomically
+PASS Unicode and spaces path supports real file save/load on this OS
+PASS Corrupt primary recovers the last valid backup
+PASS Saving after a corrupt primary preserves the valid backup
+PASS Missing primary and backup do not reset the session
+PASS Diagnostic tool choice and inspection evidence gate completion
+PASS Mechanical changes invalidate verified payment
+PASS Session counter limits reject purchases/orders before overflow
+PASS Economy cap prevents refund/payment from creating invalid saves
+PASS Save validation rejects fabricated verification on an unresolved fault
+PASS Braking order requires track location, then bay handover
+PASS Playable-core order repair/verify/reward: 01-battery
+PASS Playable-core order repair/verify/reward: 02-charge
+PASS Playable-core order repair/verify/reward: 03-misfire
+PASS Playable-core order repair/verify/reward: 04-intake
+PASS Playable-core order repair/verify/reward: 05-cooling
+PASS Playable-core order repair/verify/reward: 06-brakes
+PASS Playable-core order repair/verify/reward: 07-tires
+PASS Playable-core order repair/verify/reward: 08-shock
+PASS Eight orders in one career progress and a repeat order receives a new identity
+PASS Sandbox purchases are free and cannot mint career money
+PASS Compatible upgrades change grip, braking, damping and power
+PASS Settings, control bindings and independent effects roundtrip
+PASS Track recovery and save preserve installed modifications and active order
+PASS 5,000 random operations keep state valid; rejected transactions stay atomic
+RESULT 42 passed, 0 failed. Core-only Linux/host checks; no Unreal/Windows gameplay validation.

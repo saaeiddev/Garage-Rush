@@ -1,0 +1,335 @@
+You are a senior Unreal Engine developer, automotive simulation engineer, vehicle technical artist, environment artist, lighting artist, game designer, UI/UX designer, audio designer, and Windows release engineer.
+
+Build an actual playable Windows 11 game named GARAGE RUSH. Execute the development work, create the assets and project files, and deliver the packaged game. This is an implementation request.
+
+### 1. PRODUCT AND SCOPE
+
+Create a photorealistic single-player automotive workshop game. The player owns a professional garage, accepts customer jobs, diagnoses vehicle problems, physically services components, buys replacement parts, tunes vehicles, and verifies repairs on a closed test track.
+
+Deliver a polished first release with:
+
+- One fully explorable, detailed garage.
+- Three visually distinct, fully modeled vehicles.
+- One closed test facility.
+- At least eight playable repair orders.
+- Career progression, an inventory, a parts shop, persistent saves, and a sandbox mode.
+- Approximately 30–60 minutes of varied initial gameplay, with repeatable jobs afterward.
+
+Treat the garage, cars, mechanical interaction, and driving as the visual and gameplay priorities. Allocate time to finish and polish this defined scope.
+
+### 2. PLATFORM, ENGINE, AND BUILD CAPABILITY
+
+Target Windows 11, x64, keyboard/mouse and Xbox-compatible controllers.
+
+Use a stable, supported Unreal Engine 5 release. Inspect the available development environment, verify the Windows toolchain and engine compatibility, and pin the exact engine and plugin versions in the project and README. Use:
+
+- C++ for persistent vehicle state, jobs, inventory, economy, save/load, and core simulation.
+- Unreal-authored Blueprints for appropriate scene assembly, presentation, and interaction.
+- Enhanced Input for contextual controls.
+- UMG for the interface.
+- Chaos Vehicles for vehicle physics, after verifying the setup against the selected engine version.
+
+The primary deliverable must be a native packaged Windows game. The player must be able to launch GarageRush.exe without installing Unreal Editor.
+
+Before committing to delivery, determine whether you can actually compile, cook, package, and run a Windows build. If your environment cannot do this, identify the concrete blocker early, complete the development work that is possible, and supply reproducible Windows build instructions. Clearly label any unbuilt or untested output. Do not claim to have produced or tested an executable without evidence.
+
+Generate Unreal binary assets through a real Unreal Editor/import/cook workflow. Do not create text files with .uasset or .umap extensions or deliver a project with missing references.
+
+### 3. VISUAL QUALITY: THE MOST IMPORTANT REQUIREMENT
+
+The garage, cars, interiors, engines, and serviceable parts must look highly realistic. Aim for the visual quality of a premium automotive visualization and a modern PC simulation game.
+
+Use real-world scale and reference-based modeling. Maintain accurate proportions, coherent construction, correct normals, appropriate UVs, and consistent texture density.
+
+For Unreal rendering:
+
+- Use Nanite for suitable assets supported by the selected engine version.
+- Use Lumen global illumination and reflections where the performance budget allows.
+- Use Virtual Shadow Maps or an appropriate tested shadow configuration.
+- Provide optional hardware ray tracing for supported GPUs.
+- Provide a validated lower-cost lighting/reflection configuration.
+- Use TSR; add compatible DLSS only if its plugin is available, redistributable, and tested.
+- Use controlled exposure and restrained cinematic color grading.
+- Keep motion blur, film grain, depth of field, and camera shake individually adjustable.
+
+Use high-quality PBR materials:
+
+- Layered automotive paint with believable clear coat.
+- Brushed and machined metal, cast aluminum, steel, chrome, rubber, leather, fabric, glass, plastic, concrete, and painted surfaces.
+- Fine roughness variation, normal detail, subtle scratches, dirt, oil residue, and appropriate edge wear.
+- Physically plausible reflections and material response.
+
+Allocate texture resolution according to visibility and memory. Use 4K textures on key close-up surfaces and 2K or lower where appropriate. Use higher resolutions only when they produce a visible benefit within the measured budget.
+
+Inspect the final packaged game at normal viewing distance and in close-ups. Correct missing materials, faceting, stretched textures, floating parts, visible gaps, exaggerated bloom, unstable reflections, and unreadable details.
+
+Build the visible world with finished production assets. Temporary blockouts must be replaced before delivery.
+
+### 4. HIGH-QUALITY ASSET ACQUISITION
+
+Use high-quality ready-made vehicle, workshop, tool, and environment assets where they improve realism. Prefer properly licensed, already accessible or free assets with documented permission to ship them in a game.
+
+For every third-party asset or plugin, record:
+
+- Source URL and asset name.
+- Creator.
+- License and applicable attribution.
+- What can be distributed in the packaged game.
+- Whether the original asset can be included in the editable project.
+
+Do not purchase assets without my approval. Identify a paid asset’s cost and purpose if it is essential; otherwise use an accessible alternative.
+
+Verify a vehicle asset before relying on it: inspect the interior, engine bay, underside, UVs, material quality, movable panels, component separation, and collision needs. Modify or supplement models to support the required gameplay.
+
+Build missing serviceable parts to a consistent visual standard. Ensure imported models and newly created parts fit together mechanically.
+
+Use original fictional vehicle identities or assets whose branding use is authorized. Distinguish finished visuals from temporary prototypes in development reports.
+
+### 5. THE GARAGE ENVIRONMENT
+
+Design a believable, modern independent automotive workshop:
+
+- Two service bays, including a functional vehicle lift.
+- Tool cabinets, workbenches, tire racks, component shelves, and a diagnostic station.
+- A parts counter, computer terminal, office corner, and a customer job board.
+- Garage doors and an exterior yard connecting to the test facility.
+- Practical overhead lighting, natural daylight, grounded industrial signage, and believable wear.
+
+Use an appealing warm daylight atmosphere with neutral materials and restrained orange accents. Cars and repair areas must remain clearly visible.
+
+The lift must move the vehicle and expose the underbody correctly. Its interaction must respect vehicle placement and prevent invalid states. Validate player movement, access to service areas, and collision throughout the workshop.
+
+### 6. VEHICLES AND MECHANICAL DETAIL
+
+Include three vehicles:
+
+1. A modern compact hatchback with an inline-four engine.
+2. A performance coupe with a V8 engine.
+3. An off-road SUV with an appropriately configured powertrain.
+
+Give them distinct dimensions, body shapes, interiors, engines, handling, sounds, and fictional specifications.
+
+Each vehicle must include:
+
+- A complete exterior with realistic panel thickness and gaps.
+- A coherent interior, seats, dashboard, steering wheel, pedals, and center console.
+- A modeled engine bay and believable engine construction.
+- Underbody, exhaust, suspension, braking components, and wheels.
+- Movable hood, doors, and other relevant panels.
+- Correct pivots and suitable collision.
+- Functional lights and useful dashboard instruments.
+- Cockpit and third-person driving cameras.
+
+The coupe’s V8 must visibly read as a real V8: two cylinder banks, appropriate covers, intake, belts/accessories, exhaust routing, and surrounding engine-bay components.
+
+Create at least 20 individually identifiable serviceable components or assemblies per vehicle. Depending on the vehicle, these should include:
+
+- Battery, starter, alternator, accessory belt, and tensioner.
+- Air filter, oil filter, spark plugs or plug assemblies.
+- Radiator, coolant hoses, and fuse assemblies.
+- Wheels, tires, brake discs, and brake pads.
+- Shock absorbers and other accessible suspension assemblies.
+
+Expose accurate part names and fitting information. Preserve a vehicle’s identity and condition when moving between garage, track, and saved sessions.
+
+Full engine teardown is optional for this first release; complete the listed service operations to a high standard.
+
+### 7. REPAIR AND INTERACTION SYSTEM
+
+Use first-person movement in the garage. When working on a part, offer a smooth contextual inspection camera, focus controls, and optional labels.
+
+The interaction flow must support:
+
+- Looking at and selecting the actual visible component.
+- Inspecting wear and condition.
+- Choosing and using the appropriate tool.
+- Removing required fasteners or prerequisites.
+- Removing the component.
+- Buying or selecting a compatible replacement.
+- Installing and securing it.
+- Performing the appropriate follow-up test.
+
+Model key visible fastening operations with believable positions, rotation, and tool feedback. Make a dependency system enforce access: for example, remove a wheel before servicing its brake assembly.
+
+Prevent duplicate inventory items, impossible removals, incompatible installations, repeated rewards, and charging for failed operations. Inventory, money, vehicle state, and task completion must update coherently.
+
+Give clear feedback when an action is unavailable. Provide an optional assisted mode with highlights, tool suggestions, and the next valid step. Make labels and guidance disableable.
+
+Use a data-driven component model with stable IDs, health, compatibility, dependencies, installation state, and relevant diagnostic properties.
+
+### 8. DIAGNOSTICS AND EIGHT INITIAL JOBS
+
+Create a functional in-game diagnostic terminal and useful physical inspection tools.
+
+Measurements, fault indications, and symptoms must derive from actual simulated vehicle state. Repairing the underlying fault must change the diagnostic result and relevant vehicle behavior.
+
+Implement at least these orders:
+
+1. Weak starting caused by a degraded battery.
+2. A charging fault caused by an alternator or belt problem.
+3. Misfire symptoms caused by worn spark plugs.
+4. Restricted intake performance caused by a dirty air filter.
+5. Cooling problems caused by a radiator or hose fault.
+6. Worn brake pads and a damaged disc.
+7. Poor grip caused by worn tires.
+8. Unstable handling caused by a damaged shock absorber.
+
+Each order needs customer symptoms, inspectable evidence, a repair sequence, fitting rules, a verification step, payment, and a completion summary.
+
+Distribute jobs across all three vehicles. Include a short guided first job.
+
+Use coherent simplified automotive simulation. Document simplifications in the developer documentation and tune them for readable gameplay. Do not advertise engineering-grade diagnostic accuracy.
+
+### 9. ECONOMY, TUNING, AND SAVES
+
+Include a parts shop with categories, vehicle compatibility, prices, stock information, and basic upgrade choices.
+
+Support appropriate upgrades such as:
+
+- Tire compounds.
+- Suspension tuning.
+- Brake upgrades.
+- A limited selection of compatible performance parts.
+
+Changes must affect actual simulation parameters such as traction, damping, braking, mass, or the torque curve. Show useful before/after specifications.
+
+Implement job payments, repair expenses, player funds, reputation, and a modest progression system.
+
+Provide career and sandbox modes. Sandbox should allow unrestricted vehicle experimentation.
+
+Save money, reputation, inventory, vehicle modifications, installed/removed components, active job, job progress, location, and settings. Provide autosave, manual save, a versioned save schema, backup handling, and recovery from an invalid save.
+
+Use Windows per-user writable locations. Support installation paths containing spaces and user folders with non-English names.
+
+### 10. CLOSED TEST FACILITY AND DRIVING
+
+Build a realistic compact facility containing:
+
+- An acceleration and braking lane.
+- A handling loop with a few corners.
+- A slalom or skidpad area.
+- Clear barriers, markers, and a return route.
+
+Implement believable vehicle mass, center of gravity, wheel dimensions, steering, torque curves, gearing, suspension, traction, and braking through the validated physics setup.
+
+Provide cockpit and chase cameras. Animate wheel rotation and steering consistently. Avoid oscillation, unrealistic launches, constant sliding, and camera clipping.
+
+A repair or upgrade must produce an observable, reproducible difference. Provide repeatable acceleration/braking tests and readable results.
+
+Display working speed, RPM, gear, and relevant condition information. Provide recovery/reset controls so the player can recover from getting stuck without losing job progress.
+
+Maintain the same vehicle state on the test track and in the workshop.
+
+### 11. AUDIO AND PRESENTATION
+
+Implement distinct engine sound profiles for the vehicles, with believable idle, throttle, RPM, load, and shift transitions.
+
+Add spatial workshop ambience and feedback for tools, lift movement, doors, diagnostic equipment, tires, brakes, and relevant faults.
+
+Include independent master, effects, engine, ambience, and music controls.
+
+Create a restrained main menu featuring a real-time garage scene, the GARAGE RUSH title, and the exact credit:
+
+**Created by Amir Saeid Dehghan**
+
+Include the credit in the Credits screen as well.
+
+### 12. UI, CONTROLS, AND ACCESSIBILITY
+
+Use orange, white, and charcoal with an industrial automotive visual identity. Use angular or polygonal buttons with subtle depth. Keep interface text readable and body text conventional; angular display typography can be used for titles.
+
+Provide working:
+
+- New Game, Continue, Sandbox, Settings, Credits, and Quit.
+- Job board, inventory, shop, diagnostics, repair prompts, and results.
+- Pause menu, controls remapping, and graphics/audio settings.
+- Photo mode with an adjustable camera and UI hiding.
+
+Use English for the first-release UI and keep text localization-ready.
+
+Suggested contextual controls:
+
+- Garage: WASD movement, mouse look, E interact, left click tool action, Tab job/inventory, Esc pause.
+- Driving: WASD steering/throttle/brake, Space handbrake, C camera, R recovery.
+- Show the current action and update prompts for remapped keys and controller input.
+
+Support mouse sensitivity, FOV adjustment, inverted look, subtitle/text scaling where relevant, independent camera effects, and readable condition indicators beyond color alone.
+
+Validate UI at 1080p, 1440p, 4K, common Windows display scaling settings, and at least one ultrawide layout. Handle focus loss, Alt-Tab, mouse capture, and controller menu navigation.
+
+### 13. PERFORMANCE AND HARDWARE TARGETS
+
+My reference laptop uses Windows 11, an Intel i7 processor, NVIDIA RTX 4060 laptop GPU, and 16 GB system RAM.
+
+Aim for approximately 60 FPS at 1080p with an optimized High preset on that class of machine. This is a performance target that must be measured where matching hardware is available.
+
+Provide Low, Medium, High, Ultra, and Custom settings. Keep Ultra available for more powerful hardware and photo mode. Hardware ray tracing must be optional.
+
+Profile the garage, close-up repair interactions, and track driving. Record actual test hardware, resolution, rendering scale/upscaler, settings, average FPS, frame-time behavior, and memory use.
+
+Account for laptop GPU power limits and actual GPU memory. Separate development-machine requirements from player requirements. If the reference machine is unavailable, state that its performance remains unverified.
+
+Use texture streaming, suitable LODs, instancing, culling, asynchronous loading, and tested shader/PSO preparation. Investigate repeatable traversal or shader stutter.
+
+Do not solve poor performance by replacing the required finished cars or garage with visibly crude geometry.
+
+### 14. IMPLEMENTATION WORKFLOW
+
+Work through these milestones:
+
+1. Verify toolchain and asset availability; establish the pinned project.
+2. Build one visually finished garage bay and one detailed vehicle.
+3. Complete one playable repair job and its save/load flow.
+4. Integrate the track and validate the effect of that repair.
+5. Finish the remaining vehicles, jobs, economy, UI, and audio.
+6. Profile, optimize, test packaged builds, and prepare the release.
+
+Use clear modular architecture for interaction, parts, vehicle state, jobs, inventory, shop, economy, saves, driving, and UI.
+
+Keep source, configuration, assets, and scripts organized. Maintain a concise development log documenting completed milestones and concrete blockers. Resolve routine implementation choices independently using this specification.
+
+All promised first-release features must be connected to working systems. Remove temporary development UI from the release.
+
+### 15. QUALITY ASSURANCE AND ACCEPTANCE
+
+Test both editor behavior and the actual packaged game. Fix observed failures before claiming completion.
+
+Verify:
+
+- A fresh start reaches the main menu.
+- New Game, Continue, Sandbox, Settings, Credits, and Quit function.
+- All three vehicles load with their required interiors and mechanical detail.
+- All eight jobs can be completed and rewarded.
+- Repair dependencies, fitting rules, stock, purchases, and refunds behave consistently.
+- Repeated clicks and interrupted actions do not duplicate parts or rewards.
+- Saving/loading during an unfinished repair preserves exact component state.
+- Fault symptoms and test results change after the correct repair.
+- Driving, returning to the garage, and recovery preserve vehicle state.
+- Graphics settings apply correctly and persist.
+- No critical missing assets, broken references, invalid collision, or reproducible crashes remain.
+
+Add meaningful automated checks for part dependencies, inventory transactions, job validation, and save serialization. Record a manual end-to-end playthrough.
+
+Validate launch from a clean extracted release folder, including a path with spaces. Test with network access disabled after any necessary runtime setup. All gameplay assets must be local; the player should not need a development server, account, or asset downloads during play.
+
+Separate passed checks, failed checks, and checks that could not be performed. Screenshots and videos must come from the actual game and identify the build used.
+
+### 16. WINDOWS DELIVERY
+
+Deliver:
+
+1. **GarageRush-Windows11-x64.zip**, containing the main **GarageRush.exe** launcher, all cooked game data, and required runtime files.
+2. A tested Windows Shipping build.
+3. An optional **GarageRush-Setup.exe** installer if a suitable installer tool is available.
+4. The editable project, including **GarageRush.uproject**, source, configuration, authored assets, and build scripts, subject to asset redistribution rights.
+5. A README explaining installation, controls, gameplay, graphics presets, prerequisites, verified test hardware, and any remaining limitations.
+6. A third-party asset/license register and instructions for legitimately reacquiring any source assets that cannot be redistributed.
+7. A QA report with actual results and performance measurements.
+8. Screenshots or a short gameplay recording from the packaged game.
+9. Reproducible Windows build instructions and a PowerShell build script with meaningful error reporting.
+
+A lone .exe without its required data is not a complete release. Include necessary prerequisites or clear offline-capable prerequisite setup instructions.
+
+Test the player experience without relying on editor files or developer-only absolute paths. Report the real build size and verified requirements. Mark optional deliverables that were not produced.
+
+Begin implementation now. Preserve the requested photorealistic art direction throughout development. Continue until this defined first release is implemented, packaged, and tested, or a concrete environment/access blocker prevents the next step. When blocked, provide the exact completed work and the precise remaining action instead of claiming the release is ready.

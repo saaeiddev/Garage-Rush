@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "id": "original-source-checkpoint",
+      "asset_name": "GarageRush authored C++ source, tests and build tooling",
+      "creator": "Created by Amir Saeid Dehghan",
+      "source_url": null,
+      "license": "New project source created for the user; no third-party model or texture included.",
+      "packaged_game_permitted": true,
+      "editable_source_permitted": true,
+      "rights_verified": true,
+      "attribution": "Created by Amir Saeid Dehghan"
+    },
+    {
+      "id": "epic-engine-not-bundled",
+      "asset_name": "Unreal Engine 5.7.4 and bundled Enhanced Input/Chaos Vehicles/editor plugins",
+      "creator": "Epic Games",
+      "source_url": "https://www.unrealengine.com/en-US/eula/unreal",
+      "license": "Epic Unreal Engine EULA; install separately and review the applicable terms before publishing.",
+      "packaged_game_permitted": null,
+      "editable_source_permitted": false,
+      "rights_verified": false,
+      "attribution": "Required release notices/credits to be added when the actual engine release is built. Engine binaries/source are not in this checkpoint."
+    }
+  ],
+  "third_party_production_models_acquired": 0,
+  "purchases": [],
+  "note": "No purchased or downloaded vehicle/workshop/PBR/audio assets are present. Add a separate verified entry for every production source asset. The original-source entry cannot be used to assert rights over an imported model."
+}

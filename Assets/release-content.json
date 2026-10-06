@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "blocked-missing-production-content",
+  "maps": {"main_menu": null, "garage": null, "track": null},
+  "vehicles": {
+    "hatch": {"blueprint": null, "skeletal_mesh": null, "physics_asset": null, "animation_blueprint": null, "wheel_front": null, "wheel_rear": null, "service_meshes": {}, "license_id": null},
+    "coupe": {"blueprint": null, "skeletal_mesh": null, "physics_asset": null, "animation_blueprint": null, "wheel_front": null, "wheel_rear": null, "service_meshes": {}, "license_id": null},
+    "suv": {"blueprint": null, "skeletal_mesh": null, "physics_asset": null, "animation_blueprint": null, "wheel_front": null, "wheel_rear": null, "service_meshes": {}, "license_id": null}
+  },
+  "ui": {"main_menu": null, "repair": null, "shop": null, "inventory": null, "diagnostics": null, "settings": null, "credits": null, "photo_mode": null},
+  "audio": {"hatch_engine": null, "coupe_engine": null, "suv_engine": null, "tools": null, "lift": null, "workshop": null},
+  "credits_text": "Created by Amir Saeid Dehghan",
+  "manual_qa": {
+    "build_id": null,
+    "report_file": null,
+    "gameplay_connected": false,
+    "real_track_telemetry": false,
+    "controller_navigation": false,
+    "photorealistic_closeup_review": false,
+    "packaged_playthrough": false,
+    "offline_clean_folder_launch": false,
+    "spaces_and_non_english_windows_path": false,
+    "display_scaling_and_ultrawide": false,
+    "reference_hardware_performance": false
+  },
+  "note": "Nulls are requirements, not references to missing Unreal assets. Do not change status to production-ready until real binary assets, connected gameplay and evidence exist. Core checks do not satisfy any manual game QA field."
+}

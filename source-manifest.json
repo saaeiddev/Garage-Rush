@@ -1,0 +1,236 @@
+{
+  "checkpoint": "0.1.0",
+  "artifact": "source only; not a Windows game",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 109,
+      "sha256": "ab97cd3b34b2bad47f6063099c4b1bb65b63628f0c69b1da98ddc93e1cf5ab53"
+    },
+    {
+      "path": "Assets/THIRD-PARTY.csv",
+      "bytes": 1053,
+      "sha256": "16b04447c2d85b89ba89ae66e7ce38710d2a5cd13598119a430513583b13e77d"
+    },
+    {
+      "path": "Assets/gameplay-catalog.json",
+      "bytes": 51024,
+      "sha256": "a5e0d0c028bd8dc8aa01146b57f3bf18613e36cdfc1093c5e6feb20efe1da80f"
+    },
+    {
+      "path": "Assets/license-register.json",
+      "bytes": 1455,
+      "sha256": "d43dfa5840ffc7c1c0d4b0c53beb5cf52d742e4070bb3668d2a263d9ff0489ae"
+    },
+    {
+      "path": "Assets/release-content.json",
+      "bytes": 1722,
+      "sha256": "bddec3b1fa27becf0fa6e03ac2a98e5981010df1d7bf3087eecb1e80716eeab7"
+    },
+    {
+      "path": "Config/DefaultEngine.ini",
+      "bytes": 686,
+      "sha256": "94c3e4734eb9726fb61ead653ec334cadc596f79a0eb95a8512a3f1a0b1a0fef"
+    },
+    {
+      "path": "Config/DefaultGame.ini",
+      "bytes": 660,
+      "sha256": "b846700f3dc783ff3e7412d1d805a4e36ab002307788ea4b3b3ebb821860201f"
+    },
+    {
+      "path": "Config/DefaultInput.ini",
+      "bytes": 287,
+      "sha256": "61f0022358fc36b04243d54e229ebb7a55bc1daf5537d79d203ca596fd07a34b"
+    },
+    {
+      "path": "Content/README.md",
+      "bytes": 723,
+      "sha256": "ec0e4ff7dacaca91043fee9f0b06cb540572c911c7d4d5abda7f8c9bc1ec6a8a"
+    },
+    {
+      "path": "Docs/ARCHITECTURE.md",
+      "bytes": 6934,
+      "sha256": "783ec38b68df4de4169a38b18b120c0e7a0ffe188a678ba3c189122843a3cb94"
+    },
+    {
+      "path": "Docs/CONTENT-INTEGRATION.md",
+      "bytes": 6510,
+      "sha256": "e5d3dd31084d2844f4b93d9ed98ca5f93f02dc4bbe27742ab949118758f63dab"
+    },
+    {
+      "path": "Docs/DEVELOPMENT-LOG.md",
+      "bytes": 2059,
+      "sha256": "8557f605e913f5c541f16e10b2a27a250aa12dd7418a03c4ae57dee62ae882f8"
+    },
+    {
+      "path": "Docs/ORIGINAL-REQUEST.txt",
+      "bytes": 20162,
+      "sha256": "da0087a4d8e543354de33e2d0befa91c094ce8dcaf5d56cad4a2ccb20016d646"
+    },
+    {
+      "path": "Docs/PLAYER-README.md",
+      "bytes": 1746,
+      "sha256": "9e5fb601b7640192971eca2a130fe0cc74dacf5960a9eaff24fdefb272ec7409"
+    },
+    {
+      "path": "Docs/QA/QA-REPORT.md",
+      "bytes": 5872,
+      "sha256": "784e9b351c4b238628a03f2537f716f7ccae42d5440d9a4ca960070059a81cd3"
+    },
+    {
+      "path": "Docs/QA/core-asan-ubsan.txt",
+      "bytes": 2783,
+      "sha256": "ce3e0483390f076fdc51a1d7d2df59e45434adcbbc6318f314e37aef489ce769"
+    },
+    {
+      "path": "Docs/QA/core-tests.txt",
+      "bytes": 2783,
+      "sha256": "ce3e0483390f076fdc51a1d7d2df59e45434adcbbc6318f314e37aef489ce769"
+    },
+    {
+      "path": "Docs/QA/extracted-source-tests.txt",
+      "bytes": 2814,
+      "sha256": "77f445328104886dd997918d84a8a0cdb352715b9f7a37863d1fef9a74a2039c"
+    },
+    {
+      "path": "Docs/QA/leak-sanitizer-host-blocker.txt",
+      "bytes": 369,
+      "sha256": "5ee0e9841dc8048d3a465763605241f211b7fa35947244a1e10f6db45749788d"
+    },
+    {
+      "path": "Docs/WINDOWS-BUILD.md",
+      "bytes": 6704,
+      "sha256": "a0568a874c3134dc673cad007f2fc75a874084ed4c688af8a74dc62c8e5e8f24"
+    },
+    {
+      "path": "GarageRush.uproject",
+      "bytes": 619,
+      "sha256": "1f399d51bf51f798cc9d033cb18f3a782c5f67b510131a3d135c3bc0d71be51b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5957,
+      "sha256": "04b1f4bca5af98a12e671f2c141ef85c235ba64994626aa4faee7c8743c44356"
+    },
+    {
+      "path": "START-HERE-FA.md",
+      "bytes": 2084,
+      "sha256": "e9400c5e91434467e3443b7409516a1c0cb6af0a89585c212a0e573f8f912ed6"
+    },
+    {
+      "path": "Source/GarageRush/GarageRush.Build.cs",
+      "bytes": 696,
+      "sha256": "19424feb0c0d28ea47bdff450d1c8d7be423549fef68a04e9a42ccf5c8c4160c"
+    },
+    {
+      "path": "Source/GarageRush/Private/Core/GarageCore.cpp",
+      "bytes": 44042,
+      "sha256": "4f918824d0c6d486500b8161d47cd10731c59eda84a9d5c165e0204429d36999"
+    },
+    {
+      "path": "Source/GarageRush/Private/GarageCharacter.cpp",
+      "bytes": 6056,
+      "sha256": "daf56b9a03c9506633513edaf867c048b300de9cc3634c447427d9b4a6c4e15f"
+    },
+    {
+      "path": "Source/GarageRush/Private/GaragePartActor.cpp",
+      "bytes": 2019,
+      "sha256": "45f06e14ec6c7075432e3e8cfe449be66156d6c791ec9caa0088a207e1fa0aee"
+    },
+    {
+      "path": "Source/GarageRush/Private/GarageRush.cpp",
+      "bytes": 116,
+      "sha256": "10dd84bfb6b819d0a36d9cb53bbe1e8d5c49d8f3f0b0e240d53845e4ef59f931"
+    },
+    {
+      "path": "Source/GarageRush/Private/GarageSessionSubsystem.cpp",
+      "bytes": 10484,
+      "sha256": "0712fe9e8ae94ea10c776e5a42f52ca9076a7d0d3878e93d287b7aca91cacf3c"
+    },
+    {
+      "path": "Source/GarageRush/Private/GarageVehiclePawn.cpp",
+      "bytes": 9781,
+      "sha256": "81d771d84c28495e03736f7fb53a82108364fbaa9db95a45291a7e63bf4e7348"
+    },
+    {
+      "path": "Source/GarageRush/Public/Core/GarageCore.h",
+      "bytes": 6046,
+      "sha256": "0e6e75ff99d28bcdc6a535334116173d6c5913b45063ab8e69d3a4dfe18618a3"
+    },
+    {
+      "path": "Source/GarageRush/Public/GarageCharacter.h",
+      "bytes": 1736,
+      "sha256": "b6d1c867307e16da1ef43455720f6c2f990fdaa16897b23a502d9824fefff352"
+    },
+    {
+      "path": "Source/GarageRush/Public/GaragePartActor.h",
+      "bytes": 1228,
+      "sha256": "59f94855bdf778090c34e0ddcd680e6f728cfce85c716ae404afb0efbda78ef1"
+    },
+    {
+      "path": "Source/GarageRush/Public/GarageSessionSubsystem.h",
+      "bytes": 7509,
+      "sha256": "4a327105c2fea4c9ea74415d56be2ad8488093bb69ce5d8cec726491a14fd339"
+    },
+    {
+      "path": "Source/GarageRush/Public/GarageVehiclePawn.h",
+      "bytes": 2825,
+      "sha256": "c557eacae04ca74c16bc32cbf7f162b032f0b55c2ee9b4ee9d704ef4232d339e"
+    },
+    {
+      "path": "Source/GarageRush.Target.cs",
+      "bytes": 379,
+      "sha256": "ab8a7f67ee2a833ec2483bdf1d59d6a7ca7265a3abdd05d39d136369c5d26020"
+    },
+    {
+      "path": "Source/GarageRushEditor.Target.cs",
+      "bytes": 393,
+      "sha256": "385bd8d4c463f1f1b6b32d53867de17739358c7c3e7e6f10a92710295c39b428"
+    },
+    {
+      "path": "Tests/CoreTests.cpp",
+      "bytes": 23237,
+      "sha256": "37443e4de33b3b4ae0406713a34f9d178920502d64efae03087a58991e8cf341"
+    },
+    {
+      "path": "Tools/Build-Windows.ps1",
+      "bytes": 10608,
+      "sha256": "591f341bca38b0b83d5d5689f40d975f070bfbdbd92c06ce554e454bbdd5b91c"
+    },
+    {
+      "path": "Tools/CatalogExport.cpp",
+      "bytes": 3157,
+      "sha256": "01c8a53b90d5f5313a4ff04e373dfd0f97b68e92742d8b3aed562cfbbea70dce"
+    },
+    {
+      "path": "Tools/bootstrap_editor.py",
+      "bytes": 2082,
+      "sha256": "94b55e45b1d07bf7ee4ad1750c7a94d96a84d160c8dcd432f755f12f1ce6e6a9"
+    },
+    {
+      "path": "Tools/editor_validate.py",
+      "bytes": 7056,
+      "sha256": "5883aaefca2a1988505435555830715d84a1530d692dd9b94a8381f620d5e9ac"
+    },
+    {
+      "path": "Tools/package_zip.py",
+      "bytes": 1602,
+      "sha256": "aa8d8f5948e284fc16227a035cd42b472d25dfe9cab04e3460d0d42f786f1917"
+    },
+    {
+      "path": "Tools/test_core.py",
+      "bytes": 2582,
+      "sha256": "22fe13c6db2fce5d6d4091790d40612543993c8571bf5d9d5a354701bce34453"
+    },
+    {
+      "path": "engine-lock.json",
+      "bytes": 1062,
+      "sha256": "fb24854024a517cad7896d5125126f002127287b45f6f78ca84a23f3d5df4b72"
+    },
+    {
+      "path": "release-status.json",
+      "bytes": 1075,
+      "sha256": "433a5f73265eedc7f730ee07428fa168f23958c045923b91ea6d81b4018fbb2c"
+    }
+  ]
+}

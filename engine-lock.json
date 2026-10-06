@@ -1,0 +1,13 @@
+{
+  "engine": {"major": 5, "minor": 7, "patch": 4, "distribution": "Epic Launcher Windows installed build", "verified_here": false},
+  "plugins": [
+    {"name": "EnhancedInput", "version": "bundled with UE 5.7.4", "verified_here": false},
+    {"name": "ChaosVehiclesPlugin", "version": "bundled with UE 5.7.4", "verified_here": false},
+    {"name": "PythonScriptPlugin", "version": "bundled with UE 5.7.4, editor only", "verified_here": false},
+    {"name": "EditorScriptingUtilities", "version": "bundled with UE 5.7.4, editor only", "verified_here": false}
+  ],
+  "windows_toolchain": {"visual_studio": "2022 17.14", "msvc": "14.44.35214", "sdk": "10.0.22621.0 or newer", "verified_here": false},
+  "dlss": "not included",
+  "source_checkpoint": "0.1.0",
+  "note": "EngineAssociation can express a minor version only. Build-Windows.ps1 checks the installed Build.version patch; it will refuse a different version. Plugin descriptor versions are captured from the actual installation during preflight; no installation-derived numeric IDs have been invented."
+}

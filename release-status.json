@@ -1,0 +1,19 @@
+{
+  "project": "GARAGE RUSH",
+  "checkpoint": "0.1.0",
+  "date": "2026-10-06",
+  "intended_engine": "5.7.4",
+  "artifact_kind": "source_checkpoint",
+  "playable_windows_game": false,
+  "windows_executable_produced": false,
+  "shipping_build_tested": false,
+  "core_tests": {"host": "Linux x86_64 GCC 13.3.0", "passed": 42, "failed": 0, "asan_ubsan_passed": 42, "leaks_verified": false},
+  "data_counts": {"vehicle_definitions": 3, "service_slots": 97, "initial_order_templates": 8, "shop_skus": 63},
+  "production_art_assets": 0,
+  "unreal_binary_assets_authored": 0,
+  "engine_integration_compiled": false,
+  "powershell_executed": false,
+  "reference_hardware_fps_verified": false,
+  "blockers": ["Unreal Editor/UBT/UAT absent", "Windows/MSVC/SDK absent", "No inspected/licensed production vehicle/workshop assets", "UMG/scene/animation/audio/actual track integration incomplete"],
+  "next_action": "Compile the Unreal Editor target on Windows with UE 5.7.4, then finish one real photorealistic garage bay and vehicle repair slice before the remaining production scope."
+}

@@ -1,0 +1,5 @@
+asset_name,creator,source_url,license,packaged_distribution,editable_project_distribution,status
+Unreal Engine 5.7.4,Epic Games,https://www.unrealengine.com/en-US/eula/unreal,Epic Unreal Engine EULA,Review actual applicable terms,Not included,Intended dependency; not installed
+Enhanced Input,Epic Games,https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine?application_version=5.7,Bundled engine terms,Review actual applicable terms,Not included,Bundled UE 5.7.4 intended dependency
+Chaos Vehicles,Epic Games,https://dev.epicgames.com/documentation/en-us/unreal-engine/vehicles-in-unreal-engine?application_version=5.7,Bundled engine terms,Review actual applicable terms,Not included,Bundled UE 5.7.4 intended dependency
+PythonScriptPlugin and EditorScriptingUtilities,Epic Games,https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python?application_version=5.7,Bundled engine terms,Editor only; excluded from runtime target,Not included,Intended content-authoring tools
